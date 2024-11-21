@@ -5,7 +5,7 @@ library(shiny)
 
 # Define server logic
 server <- function(input, output, session) {
-    # Reactive value to store the dataframe
+    # Reactive value to store the data frame
     checkbox_df <- reactiveVal(data.frame())
 
     observeEvent(input$submit, {
@@ -17,15 +17,15 @@ server <- function(input, output, session) {
 
         if(grepl("Entanglement", df$Narrative)==TRUE) {df$Injury.Type = "EN"} else {df$Injury.Type = "VS"}
 
-        if(df$Injury.Type=="EN") {df <- cbind.data.frame(df, predict(ModelEntangle, InjuryCovariates(df), type="prob"))}
-        if(df$Injury.Type=="VS") {df <- cbind.data.frame(df, predict(ModelVessel, InjuryCovariates(df), type="prob")) }
-        # use this if you just want to see the covariate states assigned: if(df$Injury.Type=="VS") {df <- InjuryCovariates(df) }
+   if(df$Injury.Type=="EN") {df <- cbind.data.frame(df, predict(ModelEntangle, InjuryCovariates(df), type="prob"))}
+   if(df$Injury.Type=="VS") {df <- cbind.data.frame(df, predict(ModelVessel, InjuryCovariates(df), type="prob")) }
+# use this if you just want to see the covariate states assigned: if(df$Injury.Type=="VS") {df <- InjuryCovariates(df) }
 
-        # Update the reactive dataframe
+# Update the reactive dataframe
         checkbox_df(df)
     })
 
-    # Render the table
+# Render the table
     output$table <- renderTable({
         checkbox_df()
     })
