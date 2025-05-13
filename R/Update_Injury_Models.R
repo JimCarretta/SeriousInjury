@@ -26,7 +26,7 @@
 
 # latest update of R-package 'SeriousInjury'
 
-# devtools::install_github("JimCarretta/SeriousInjury")
+# devtools::install_github("SWFSC/SeriousInjury")
 
 # library(SeriousInjury)
 
