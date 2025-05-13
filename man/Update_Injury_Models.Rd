@@ -8,6 +8,9 @@ Update_Injury_Models()
 }
 \description{
 Generate Random Forest (RF) entanglement and vessel strike injury models.
+
+Note that this function overwrites the "WhaleData.RData" file
+in both 'data' and 'extdata'
 }
 \examples{
 ModelEntangle
