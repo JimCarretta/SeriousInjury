@@ -3,7 +3,8 @@
 #' @description
 #' Generate Random Forest (RF) entanglement and vessel strike injury models.
 #'
-#' @author Jim Carretta <jim.carretta@noaa.gov>
+#' Note that this function overwrites the "WhaleData.RData" file
+#' in both 'data' and 'extdata'
 #'
 #' @examples ModelEntangle
 #' ModelVessel
@@ -26,17 +27,20 @@
 
 # latest update of R-package 'SeriousInjury'
 
-# devtools::install_github("JimCarretta/SeriousInjury")
+# devtools::install_github("SWFSC/SeriousInjury")
 
 # library(SeriousInjury)
 
- rm(list=ls())
+ # rm(list=ls())
 
  size.RF = 1000       # how many RF trees to build
 
- setwd("c:/carretta/github/SeriousInjury/inst/extdata")
+ # setwd("c:/carretta/github/SeriousInjury/inst/extdata")
 
- file.list <- dir(pattern="Recalculation_")
+ pkg.dir <- system.file(package = "SeriousInjury")
+ file.list <- dir(path = file.path(pkg.dir, "extdata"),
+                  pattern="Recalculation_",
+                  full.names = TRUE)
 
  Narratives_Health <- data.frame()
 
@@ -133,9 +137,11 @@
  ModelEntangle
  ModelVessel
 
-### Save multiple objects to 'WhaleData.RData'
-    save(WhaleData, data.entangle, data.vessel, data.test.entangle, data.test.vessel, entangle.covariates, vessel.covariates, data.model, ModelEntangle, ModelVessel, file="c:/carretta/GitHub/SeriousInjury/data/WhaleData.RData")
-    save(WhaleData, data.entangle, data.vessel, data.test.entangle, data.test.vessel, entangle.covariates, vessel.covariates, data.model, ModelEntangle, ModelVessel, file="c:/carretta/GitHub/SeriousInjury/inst/extdata/WhaleData.RData")
+ ### Save multiple objects to 'WhaleData.RData'
+ save(WhaleData, data.entangle, data.vessel, data.test.entangle, data.test.vessel, entangle.covariates, vessel.covariates, data.model, ModelEntangle, ModelVessel,
+      file=file.path(pkg.dir, "data", "WhaleData.RData"))
+ save(WhaleData, data.entangle, data.vessel, data.test.entangle, data.test.vessel, entangle.covariates, vessel.covariates, data.model, ModelEntangle, ModelVessel,
+      file=file.path(pkg.dir, "extdata", "WhaleData.RData"))
 
 
 }

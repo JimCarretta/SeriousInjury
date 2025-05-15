@@ -20,6 +20,3 @@ Values <- Extract_Numeric_From_String(WhaleData)
 
 
 }
-\author{
-Jim Carretta \href{mailto:jim.carretta@noaa.gov}{jim.carretta@noaa.gov}
-}

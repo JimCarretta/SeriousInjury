@@ -11,8 +11,6 @@
 #'
 #' @param df an object of class 'data.frame'
 #'
-#' @author Jim Carretta <jim.carretta@noaa.gov>
-#'
 #' @examples
 #'
 #' # append injury covariates to WhaleData

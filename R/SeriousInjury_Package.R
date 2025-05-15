@@ -4,7 +4,7 @@
 #'
 #' @usage SeriousInjuryTutorial()
 #'
-#' @author Jim Carretta <jim.carretta@noaa.gov>
+#' @author Jim Carretta <jim.carretta@gmail.com>
 #'
 #' @examples SeriousInjuryTutorial()
 #'

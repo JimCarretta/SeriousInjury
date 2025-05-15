@@ -19,6 +19,3 @@ Targeted toward hook and line entanglements involving monofilament line.
 Monofilament <- Monofilament_Hook_Line(WhaleData)
 
 }
-\author{
-Jim Carretta \href{mailto:jim.carretta@noaa.gov}{jim.carretta@noaa.gov}
-}

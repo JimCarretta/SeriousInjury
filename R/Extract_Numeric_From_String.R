@@ -7,8 +7,6 @@
 #'
 #' @param df an object of class 'data.frame'
 #'
-#' @author Jim Carretta <jim.carretta@noaa.gov>
-#'
 #' @examples
 #'
 #' # Return a vector of unique numeric values appearing in object ʻdfʻ

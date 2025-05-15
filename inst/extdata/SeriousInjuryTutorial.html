@@ -9,10 +9,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="Jim.Carretta@noaa.gov" />
+<meta name="author" content="jim.carretta@gmail.com" />
 
 
-<title>R-Package SeriousInjury v1.5.1</title>
+<title>R-Package SeriousInjury 1.5.2</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -1478,12 +1478,12 @@ border-radius: 0px;
 
 
 
-<h1 class="title toc-ignore">R-Package <a href="https://github.com/JimCarretta/SeriousInjury"><em>SeriousInjury</em></a>
-v1.5.1</h1>
+<h1 class="title toc-ignore">R-Package <a href="https://github.com/SWFSC/SeriousInjury"><em>SeriousInjury</em></a>
+1.5.2</h1>
 <h3 class="subtitle">Classify Whale Injuries as Serious or Non-Serious
 with Classification Trees</h3>
-<h4 class="author"><a href="mailto:Jim.Carretta@noaa.gov" class="email">Jim.Carretta@noaa.gov</a></h4>
-<h4 class="date">20 November, 2024</h4>
+<h4 class="author"><a href="mailto:jim.carretta@gmail.com" class="email">jim.carretta@gmail.com</a></h4>
+<h4 class="date">15 May, 2025</h4>
 
 </div>
 
@@ -1507,10 +1507,10 @@ several more species not included in the publication.</p>
 if (!require(&#39;devtools&#39;)) install.packages(&#39;devtools&#39;)
 
 # install from GitHub
-devtools::install_github(&#39;JimCarretta/SeriousInjury&#39;)
+devtools::install_github(&#39;SWFSC/SeriousInjury&#39;)
 
 # if this install fails, use this alternative method, using package &#39;pak&#39;:
-pak::pkg_install(&quot;JimCarretta/SeriousInjury&quot;)
+pak::pkg_install(&quot;SWFSC/SeriousInjury&quot;)
 
 library(SeriousInjury)
 
@@ -1535,7 +1535,7 @@ wrap is a non-serious injury). RF models automate that process. RF model
 covariates are derived from key words and phrases in injury narratives
 known to be good predictors of non-serious vs serious injuries. Methods,
 R functions, and application examples for large whale data are
-summarized in the <a href="https://github.com/JimCarretta/SeriousInjury">R-Package
+summarized in the <a href="https://github.com/SWFSC/SeriousInjury">R-Package
 <em>SeriousInjury</em></a> and in this tutorial.</p>
 <hr />
 </div>
@@ -1749,9 +1749,9 @@ ModelEntangle</code></pre>
 ##                      Number of trees: 1000 
 ## No. of variables tried at each split: 4 
 ##        No. of permutation replicates: 100 
-##                           Start time: 2024-11-20 21:01:10 
-##                             End time: 2024-11-20 21:02:38 
-##                             Run time: 1.47 mins 
+##                           Start time: 2025-05-15 08:33:06 
+##                             End time: 2025-05-15 08:34:26 
+##                             Run time: 1.33 mins 
 ## 
 ##              DEAD.DECLINE RECOVERED pct.correct LCI_0.95 UCI_0.95
 ## DEAD.DECLINE          127         7        94.8     89.5     97.9
@@ -1790,9 +1790,9 @@ ModelVessel</code></pre>
 ##                      Number of trees: 1000 
 ## No. of variables tried at each split: 3 
 ##        No. of permutation replicates: 100 
-##                           Start time: 2024-11-20 21:02:38 
-##                             End time: 2024-11-20 21:03:15 
-##                             Run time: 37 secs 
+##                           Start time: 2025-05-15 08:34:26 
+##                             End time: 2025-05-15 08:35:25 
+##                             Run time: 59.1 secs 
 ## 
 ##              DEAD.DECLINE RECOVERED pct.correct LCI_0.95 UCI_0.95
 ## DEAD.DECLINE          152         4        97.4     93.6     99.3
