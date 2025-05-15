@@ -24,6 +24,3 @@ EN.df.probs <- cbind.data.frame(CovList, ENprobs)
 head(EN.df.probs)
 
 }
-\author{
-Jim Carretta \href{mailto:jim.carretta@noaa.gov}{jim.carretta@noaa.gov}
-}

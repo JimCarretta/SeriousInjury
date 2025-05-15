@@ -21,6 +21,3 @@ VessSz <- VessSz(WhaleData)
 
 
 }
-\author{
-Jim Carretta \href{mailto:jim.carretta@noaa.gov}{jim.carretta@noaa.gov}
-}

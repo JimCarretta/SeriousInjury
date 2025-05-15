@@ -6,8 +6,6 @@
 #' Note that this function overwrites the "WhaleData.RData" file
 #' in both 'data' and 'extdata'
 #'
-#' @author Jim Carretta <jim.carretta@noaa.gov>
-#'
 #' @examples ModelEntangle
 #' ModelVessel
 #' data.entangle

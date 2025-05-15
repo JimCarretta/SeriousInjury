@@ -1,7 +1,7 @@
 ---
 title: "R-Package [*SeriousInjury*](https://github.com/SWFSC/SeriousInjury) `r packageVersion('SeriousInjury')`"
 subtitle: "Classify Whale Injuries as Serious or Non-Serious with Classification Trees"
-author: "Jim.Carretta@noaa.gov"
+author: "jim.carretta@gmail.com"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
   html_document:

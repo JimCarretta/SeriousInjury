@@ -14,5 +14,5 @@ SeriousInjuryTutorial()
 
 }
 \author{
-Jim Carretta \href{mailto:jim.carretta@noaa.gov}{jim.carretta@noaa.gov}
+Jim Carretta \href{mailto:jim.carretta@gmail.com}{jim.carretta@gmail.com}
 }

@@ -4,7 +4,7 @@ Title: Classify Whale Injuries as Serious or Non-Serious with Classification Tre
 Version: 1.5.2.9000
 Depends: devtools, rfPermute, shiny, gridExtra, ggforce, ggplot2, rlang, tidyverse, vctrs, stringr, dplyr
 Author: Jim Carretta
-Maintainer: Jim Carretta <jim.carretta@noaa.gov>
+Maintainer: Jim Carretta <jim.carretta@gmail.com>
 Description: Use Random Forest (RF) classification trees to assign whale injuries
     as 'Serious' or 'Non-Serious', based on narratives. There are two RF models, 
     one for vessel strikes (ModelVessel) and one for entanglements (ModelEntangle).

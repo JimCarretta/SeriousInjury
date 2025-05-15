@@ -8,8 +8,6 @@
 #'
 #' @param df an object of class 'data.frame'
 #'
-#' @author Jim Carretta <jim.carretta@noaa.gov>
-#'
 #' @examples
 #' # Generate barplot of covariates by health status
 #'
